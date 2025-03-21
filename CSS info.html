@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Basics</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #C8A2C8; /* Lilac background */
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+      text-align: center;
+      color: #6A5ACD; /* Slate blue for heading */
+    }
+    h2 {
+      color: #483D8B; /* Dark slate blue for subheadings */
+    }
+    pre {
+      background-color: #f4f4f4;
+      padding: 15px;
+      border-radius: 5px;
+      overflow-x: auto;
+    }
+    code {
+      font-family: Consolas, monospace;
+      color: #d63384;
+    }
+    .example {
+      margin-bottom: 30px;
+    }
+    .example p {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>CSS Basics</h1>
+    <p>CSS (Cascading Style Sheets) is used to style and layout web pages. Below are some examples of CSS code:</p>
+
+    <!-- Example 1 -->
+    <div class="example">
+      <h2>1. Basic Styling</h2>
+      <pre><code>
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+}
+      </code></pre>
+    </div>
+
+    <!-- Example 2 -->
+    <div class="example">
+      <h2>2. Text Styling</h2>
+      <pre><code>
+h1 {
+  color: #6A5ACD;
+  text-align: center;
+  font-size: 2.5em;
+}
+
+p {
+  line-height: 1.6;
+  font-size: 1.1em;
+}
+      </code></pre>
+    </div>
+
+    <!-- Example 3 -->
+    <div class="example">
+      <h2>3. Box Model</h2>
+      <pre><code>
+.box {
+  width: 200px;
+  height: 200px;
+  padding: 20px;
+  border: 2px solid #6A5ACD;
+  margin: 10px;
+  background-color: #fff;
+}
+      </code></pre>
+    </div>
+
+    <!-- Example 4 -->
+    <div class="example">
+      <h2>4. Flexbox Layout</h2>
+      <pre><code>
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item {
+  flex: 1;
+  margin: 10px;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+      </code></pre>
+    </div>
+
+    <!-- Example 5 -->
+    <div class="example">
+      <h2>5. Grid Layout</h2>
+      <pre><code>
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.grid-item {
+  background-color: #f4f4f4;
+  padding: 20px;
+  text-align: center;
+}
+      </code></pre>
+    </div>
+
+    <!-- Example 6 -->
+    <div class="example">
+      <h2>6. Hover Effects</h2>
+      <pre><code>
+.button {
+  background-color: #6A5ACD;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #483D8B;
+}
+      </code></pre>
+    </div>
+
+    <!-- Example 7 -->
+    <div class="example">
+      <h2>7. Media Queries</h2>
+      <pre><code>
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .box {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
+      </code></pre>
+    </div>
+  </div>
+</body>
+</html>

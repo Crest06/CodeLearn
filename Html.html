@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+    <link rel="stylesheet" href="Html.css">
+</head>
+<body>
+      <div class="top-image"></div>
+      <div class="html-body">
+        <ul>
+            <li>HTML is a markup language that defines the structure of your webpages</li>
+            <li>HTML documents are made up of elements, which are defined by tags.
+                Tags usually come in pairs: an opening tag and a closing tag</li>
+            <li></li>
+        </ul>
+      </div>
+      <div id="editorContainer">
+        <h1>Try It Editor</h1>
+        <textarea id="htmlCode" placeholder="Write your HTML code here..."></textarea>
+        <textarea id="cssCode" placeholder="Write your CSS code here..."></textarea>
+        <textarea id="jsCode" placeholder="Write your JavaScript code here..."></textarea>
+        <button onclick="runCode()">Run</button>
+        <iframe id="result"></iframe>
+    </div>
+
+    <select id="language">
+        <option value="javascript">JavaScript</option>
+        <option value="python">Python</option>
+        <option value="html">HTML</option>
+    </select>
+    <textarea id="editor" placeholder="Enter your code here..."></textarea>
+    <button onclick="runCode()">Run</button>
+    <div id="output"></div>
+
+    <script>
+
+        function runCode() {
+            const language = document.getElementById('language').value;
+            const code = document.getElementById('editor').value;
+            const output = document.getElementById('output');
+
+            output.innerHTML = '';
+
+            switch (language) {
+                case 'javascript':
+                    try {
+                        const result = eval(code);
+                        output.innerHTML = result !== undefined ? result : 'Code executed successfully.';
+                    } catch (error) {
+                        output.innerHTML = 'Error: ' + error.message;
+                    }
+                    break;
+                case 'python':
+                    output.innerHTML = 'Python execution is not supported in this browser-based editor.';
+                    break;
+                case 'html':
+                    output.innerHTML = code;
+                    break;
+                default:
+                    output.innerHTML = 'Unsupported language.';
+            }
+        }
+    
+    </script>
+</body>
+</html>

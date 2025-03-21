@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Python Basics</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #82aa16;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+      text-align: center;
+      color: #007BFF;
+    }
+    h2 {
+      color: #0056b3;
+    }
+    pre {
+      background-color: #f4f4f4;
+      padding: 15px;
+      border-radius: 5px;
+      overflow-x: auto;
+    }
+    code {
+      font-family: Consolas, monospace;
+      color: #d63384;
+    }
+    .example {
+      margin-bottom: 30px;
+    }
+    .example p {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Python Basics</h1>
+    <p>Python is a high-level, interpreted programming language known for its simplicity and readability. Below are some examples of Python code:</p>
+
+    <!-- Example 1 -->
+    <div class="example">
+      <h2>1. Hello, World!</h2>
+      <pre><code>
+print("Hello, World!")
+      </code></pre>
+    </div>
+
+    <!-- Example 2 -->
+    <div class="example">
+      <h2>2. Variables and Data Types</h2>
+      <pre><code>
+name = "Alice"
+age = 25
+height = 5.6
+is_student = True
+
+print(name, age, height, is_student)
+      </code></pre>
+    </div>
+
+    <!-- Example 3 -->
+    <div class="example">
+      <h2>3. Lists</h2>
+      <pre><code>
+fruits = ["apple", "banana", "cherry"]
+print(fruits)
+print(fruits[0])  # Access first element
+      </code></pre>
+    </div>
+
+    <!-- Example 4 -->
+    <div class="example">
+      <h2>4. Loops</h2>
+      <pre><code>
+for i in range(5):
+    print(i)
+
+# Loop through a list
+for fruit in fruits:
+    print(fruit)
+      </code></pre>
+    </div>
+
+    <!-- Example 5 -->
+    <div class="example">
+      <h2>5. Functions</h2>
+      <pre><code>
+def greet(name):
+    return f"Hello, {name}!"
+
+print(greet("Alice"))
+      </code></pre>
+    </div>
+
+    <!-- Example 6 -->
+    <div class="example">
+      <h2>6. Conditional Statements</h2>
+      <pre><code>
+age = 18
+if age >= 18:
+    print("You are an adult.")
+else:
+    print("You are a minor.")
+      </code></pre>
+    </div>
+
+    <!-- Example 7 -->
+    <div class="example">
+      <h2>7. Dictionaries</h2>
+      <pre><code>
+person = {
+    "name": "Alice",
+    "age": 25,
+    "is_student": True
+}
+
+print(person["name"])
+print(person.get("age"))
+      </code></pre>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+.top-image {
+    background-image: url('HTML\ Image.jpg');
+    background-size: cover; /* Ensure the image covers the entire div */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-position: center; /* Center the image horizontally and vertically */
+    height: 70vh; /* Set the height of the image container to 50% of the viewport height */
+    width: 100%; /* Full width */
+}
+
+body {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    font-family: Arial, sans-serif; /* Set default font */
+}
+
+.html-body{
+    background-color: color-mix(in srgb, lime 40%, white 60%);
+    width:80%;
+    height: 30%;
+    border-radius: 12px;
+    padding: 8px;
+    display: flex;
+    font-size: 16px;
+    margin-left: 15px;
+    margin-top : 15px;
+    
+
+}

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Basics</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #cd0e0e; 
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+      text-align: center;
+      color: #6A5ACD; /* Slate blue for heading */
+    }
+    h2 {
+      color: #483D8B; /* Dark slate blue for subheadings */
+    }
+    pre {
+      background-color: #f4f4f4;
+      padding: 15px;
+      border-radius: 5px;
+      overflow-x: auto;
+    }
+    code {
+      font-family: Consolas, monospace;
+      color: #d63384;
+    }
+    .example {
+      margin-bottom: 30px;
+    }
+    .example p {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>JavaScript Basics</h1>
+    <p>JavaScript is a programming language used to make web pages interactive. Below are some examples of JavaScript code:</p>
+
+    <!-- Example 1 -->
+    <div class="example">
+      <h2>1. Hello, World!</h2>
+      <pre><code>
+console.log("Hello, World!");
+      </code></pre>
+    </div>
+
+    <!-- Example 2 -->
+    <div class="example">
+      <h2>2. Variables and Data Types</h2>
+      <pre><code>
+let name = "Alice";
+let age = 25;
+let isStudent = true;
+
+console.log(name, age, isStudent);
+      </code></pre>
+    </div>
+
+    <!-- Example 3 -->
+    <div class="example">
+      <h2>3. Functions</h2>
+      <pre><code>
+function greet(name) {
+  return `Hello, ${name}!`;
+}
+
+console.log(greet("Alice"));
+      </code></pre>
+    </div>
+
+    <!-- Example 4 -->
+    <div class="example">
+      <h2>4. Arrays</h2>
+      <pre><code>
+let fruits = ["apple", "banana", "cherry"];
+console.log(fruits[0]); // Access first element
+fruits.push("orange"); // Add an element
+console.log(fruits);
+      </code></pre>
+    </div>
+
+    <!-- Example 5 -->
+    <div class="example">
+      <h2>5. Conditional Statements</h2>
+      <pre><code>
+let age = 18;
+
+if (age >= 18) {
+  console.log("You are an adult.");
+} else {
+  console.log("You are a minor.");
+}
+      </code></pre>
+    </div>
+
+    <!-- Example 6 -->
+    <div class="example">
+      <h2>6. Loops</h2>
+      <pre><code>
+for (let i = 0; i < 5; i++) {
+  console.log(i);
+}
+
+let fruits = ["apple", "banana", "cherry"];
+for (let fruit of fruits) {
+  console.log(fruit);
+}
+      </code></pre>
+    </div>
+
+    <!-- Example 7 -->
+    <div class="example">
+      <h2>7. DOM Manipulation</h2>
+      <pre><code>
+// Change the text of an element
+document.getElementById("demo").innerText = "Hello, JavaScript!";
+
+// Add an event listener
+document.querySelector("button").addEventListener("click", () => {
+  alert("Button clicked!");
+});
+      </code></pre>
+    </div>
+  </div>
+</body>
+</html>
